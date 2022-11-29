@@ -33,7 +33,7 @@
             // 
             // GetInvoiceByUuidButton
             // 
-            this.GetInvoiceByUuidButton.Location = new System.Drawing.Point(12, 50);
+            this.GetInvoiceByUuidButton.Location = new System.Drawing.Point(281, 160);
             this.GetInvoiceByUuidButton.Name = "GetInvoiceByUuidButton";
             this.GetInvoiceByUuidButton.Size = new System.Drawing.Size(143, 49);
             this.GetInvoiceByUuidButton.TabIndex = 0;
