@@ -31,15 +31,7 @@ namespace SW_APIS_CLIENT
 
             var responseObject =  await response.Content.ReadFromJsonAsync<StorageResponse>(); //Error caracteres escapados que deforman el JSON.
 
-            var responseBody = response.Content.ReadAsStringAsync().Result;
-            var jsonResponse = JsonSerializer.Serialize(responseBody);
-
-            //await File.WriteAllTextAsync("InvoiceByUuidResponse.json", jsonResponse); // Al escribir el JSON se pueden ver caracteres escapados que deforman el JSON.
-
-
-
-            responseObject = JsonSerializer.Deserialize<StorageResponse>(jsonResponse);
-
+            
             MessageBox.Show($"StatusCode {response.StatusCode} reason {response.ReasonPhrase}");
         }
     }
